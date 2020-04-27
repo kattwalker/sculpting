@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+        <VXA Version="1.0">
+        <Simulator>
+<Integration>
+        <Integrator>0</Integrator>
+        <DtFrac>0.9</DtFrac>
+        </Integration>
+        <Damping>
+        <BondDampingZ>1</BondDampingZ>
+        <ColDampingZ>0.8</ColDampingZ>
+        <SlowDampingZ>0.01</SlowDampingZ>
+        </Damping>
+        <Collisions>
+        <SelfColEnabled>1</SelfColEnabled>
+        <ColSystem>3</ColSystem>
+        <CollisionHorizon>2</CollisionHorizon>
+        </Collisions>
+        <Features>
+        <FluidDampEnabled>0</FluidDampEnabled>
+        <PoissonKickBackEnabled>0</PoissonKickBackEnabled>
+        <EnforceLatticeEnabled>0</EnforceLatticeEnabled>
+        </Features>
+        <SurfMesh>
+        <CMesh>
+        <DrawSmooth>1</DrawSmooth>
+        <Vertices/>
+        <Facets/>
+        <Lines/>
+        </CMesh>
+        </SurfMesh>
+        <StopCondition>
+        <StopConditionType>2</StopConditionType>
+        <StopConditionValue>7</StopConditionValue>
+        <InitCmTime>1</InitCmTime>
+        <ActuationStartTime>0</ActuationStartTime>
+        </StopCondition>
+        <EquilibriumMode>
+        <EquilibriumModeEnabled>0</EquilibriumModeEnabled>
+        </EquilibriumMode>
+        <GA>
+        <WriteFitnessFile>1</WriteFitnessFile>
+        <FitnessFileName>run_1/fitnessFiles/softbotsOutput--id_00002.xml</FitnessFileName>
+        <QhullTmpFile>run_1/../_qhull/tempFiles/qhullInput--id_00002.txt</QhullTmpFile>
+        <CurvaturesTmpFile>run_1/../_qhull/tempFiles/curvatures--id_00002.txt</CurvaturesTmpFile>
+        </GA>
+        <MinTempFact>0.1</MinTempFact>
+        <MaxTempFactChange>1e-05</MaxTempFactChange>
+        <DampEvolvedStiffness>1</DampEvolvedStiffness>
+        <MaxStiffnessChange>10000</MaxStiffnessChange>
+        <MinElasticMod>5000000.0</MinElasticMod>
+        <MaxElasticMod>500000000.0</MaxElasticMod>
+        <ErrorThreshold>0</ErrorThreshold>
+        <ThresholdTime>0</ThresholdTime>
+        <MaxKP>0</MaxKP>
+        <MaxKI>0</MaxKI>
+        <MaxANTIWINDUP>0</MaxANTIWINDUP>
+</Simulator>
+<Environment>
+<Fixed_Regions>
+            <NumFixed>0</NumFixed>
+            </Fixed_Regions>
+            <Forced_Regions>
+            <NumForced>0</NumForced>
+            </Forced_Regions>
+<Gravity>
+        <GravEnabled>1</GravEnabled>
+        <GravAcc>-9.81</GravAcc>
+        <FloorEnabled>1</FloorEnabled>
+        <FloorSlope>0.0</FloorSlope>
+        <bump_size>0.0001</bump_size>
+        <bump_seperation>0.5</bump_seperation>
+        <PipeEnabled>1</PipeEnabled>
+        <pipe>0.0016</pipe>
+        <Stepheight>0.0</Stepheight>
+        </Gravity>
+        <Thermal>
+        <TempEnabled>1</TempEnabled>
+        <TempAmp>39</TempAmp>
+        <TempBase>25</TempBase>
+        <VaryTempEnabled>1</VaryTempEnabled>
+        <TempPeriod>0.25</TempPeriod>
+        </Thermal>
+        <LightSource>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        </LightSource>
+        <RegenerationModel>
+        <TiltVectorsUpdatesPerTempCycle>0</TiltVectorsUpdatesPerTempCycle>
+        <RegenerationModelUpdatesPerTempCycle>0</RegenerationModelUpdatesPerTempCycle>
+        <NumHiddenRegenerationNeurons>0</NumHiddenRegenerationNeurons>
+        <RegenerationModelInputBias>1</RegenerationModelInputBias>
+        </RegenerationModel>
+        <ForwardModel>
+        <ForwardModelUpdatesPerTempCycle>0</ForwardModelUpdatesPerTempCycle>
+        </ForwardModel>
+        <Controller>
+        <ControllerUpdatesPerTempCycle>0</ControllerUpdatesPerTempCycle>
+        </Controller>
+        <Signaling>
+        <SignalingUpdatesPerTempCycle>0</SignalingUpdatesPerTempCycle>
+        <DepolarizationsPerTempCycle>5</DepolarizationsPerTempCycle>
+        <RepolarizationsPerTempCycle>1</RepolarizationsPerTempCycle>
+        </Signaling>
+        <GrowthAmplitude>0</GrowthAmplitude>
+        <GrowthSpeedLimit>0</GrowthSpeedLimit>
+        <GreedyGrowth>0</GreedyGrowth>
+        <GreedyThreshold>0</GreedyThreshold>
+        <TimeBetweenTraces>0</TimeBetweenTraces>
+        <SavePassiveData>0</SavePassiveData>
+        <StickyFloor>0</StickyFloor>
+        <NeedleInHaystack>0</NeedleInHaystack>
+        <KramerFabric>0</KramerFabric>
+        <FallingProhibited>0</FallingProhibited>
+        <FluidEnvironment>0</FluidEnvironment>
+        <AggregateDragCoefficient>0</AggregateDragCoefficient>
+        </Environment>
+<VXC Version="0.93">
+        <Lattice>
+        <Lattice_Dim>0.01</Lattice_Dim>
+        <X_Dim_Adj>1</X_Dim_Adj>
+        <Y_Dim_Adj>1</Y_Dim_Adj>
+        <Z_Dim_Adj>1</Z_Dim_Adj>
+        <X_Line_Offset>0</X_Line_Offset>
+        <Y_Line_Offset>0</Y_Line_Offset>
+        <X_Layer_Offset>0</X_Layer_Offset>
+        <Y_Layer_Offset>0</Y_Layer_Offset>
+        </Lattice>
+        <Voxel>
+        <Vox_Name>BOX</Vox_Name>
+        <X_Squeeze>1</X_Squeeze>
+        <Y_Squeeze>1</Y_Squeeze>
+        <Z_Squeeze>1</Z_Squeeze>
+        </Voxel>
+        <Palette>
+        <Material ID="1">
+            <MatType>0</MatType>
+            <Name>Passive_Soft</Name>
+            <Display>
+            <Red>0</Red>
+            <Green>1</Green>
+            <Blue>1</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>5000000.0</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1000000.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>0</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+        <Material ID="2">
+            <MatType>0</MatType>
+            <Name>Passive_Hard</Name>
+            <Display>
+            <Red>0</Red>
+            <Green>0</Green>
+            <Blue>1</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>500000000.0</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1000000.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>0</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+            <Material ID="3">
+            <MatType>0</MatType>
+            <Name>Active_+</Name>
+            <Display>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>5000000.0</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1000000.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>0.01</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+        <Material ID="4">
+            <MatType>0</MatType>
+            <Name>Active_-</Name>
+            <Display>
+            <Red>0</Red>
+            <Green>1</Green>
+            <Blue>0</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>5000000.0</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1200.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>-0.01</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+        <Material ID="5">
+            <MatType>0</MatType>
+            <Name>Obstacle</Name>
+            <Display>
+            <Red>1</Red>
+            <Green>0.784</Green>
+            <Blue>0</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>5e+007</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1000000.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>0</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+        <Material ID="6">
+            <MatType>0</MatType>
+            <Name>Head_Active_+</Name>
+            <Display>
+            <Red>1</Red>
+            <Green>1</Green>
+            <Blue>0</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>5000000.0</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1000000.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>0.01</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+        <Material ID="7">
+            <MatType>0</MatType>
+            <Name>TouchSensor</Name>
+            <Display>
+            <Red>0</Red>
+            <Green>1</Green>
+            <Blue>0</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>5000000.0</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1000000.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>0.01</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+        <Material ID="8">
+            <MatType>0</MatType>
+            <Name>Filler</Name>
+            <Display>
+            <Red>1</Red>
+            <Green>1</Green>
+            <Blue>0</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>5000000.0</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1000000.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>0.01</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+        <Material ID="9">
+            <MatType>0</MatType>
+            <Name>Base</Name>
+            <Display>
+            <Red>1</Red>
+            <Green>0.078</Green>
+            <Blue>0.576</Blue>
+            <Alpha>1</Alpha>
+            </Display>
+            <Mechanical>
+            <MatModel>0</MatModel>
+            <Elastic_Mod>5000000.0</Elastic_Mod>
+            <Plastic_Mod>0</Plastic_Mod>
+            <Yield_Stress>0</Yield_Stress>
+            <FailModel>0</FailModel>
+            <Fail_Stress>0</Fail_Stress>
+            <Fail_Strain>0</Fail_Strain>
+            <Density>1000000.0</Density>
+            <Poissons_Ratio>0.35</Poissons_Ratio>
+            <CTE>0.01</CTE>
+            <uStatic>1</uStatic>
+            <uDynamic>0.5</uDynamic>
+            </Mechanical>
+        </Material>
+        </Palette>
+        <Structure Compression="ASCII_READABLE">
+        <X_Voxels>8.0</X_Voxels>
+        <Y_Voxels>8.0</Y_Voxels>
+        <Z_Voxels>8.0</Z_Voxels>
+        <numRegenerationModelSynapses>0</numRegenerationModelSynapses>
+        <numForwardModelSynapses>0</numForwardModelSynapses>
+        <numControllerSynapses>0</numControllerSynapses>
+<Data>
+<Layer><![CDATA[3333333333333333333333333333333333333333333333333333333333333333]]></Layer>
+<Layer><![CDATA[3333333333333333333333333333333333333333333333333333333333333333]]></Layer>
+<Layer><![CDATA[3333333333333333333333333333333333333333333333333333333333333333]]></Layer>
+<Layer><![CDATA[3333333333333333333333333333333333333333333333333333333333333333]]></Layer>
+<Layer><![CDATA[3333333333333333333333333333333333333333333333333333333333333333]]></Layer>
+<Layer><![CDATA[3333333333333333333333333333333333333333333333333333333333333333]]></Layer>
+<Layer><![CDATA[3333333333333333333333333333333333333333333333333333333333333333]]></Layer>
+<Layer><![CDATA[3333333333333333333333333333333333333333333333333333333333333333]]></Layer>
+</Data>
+<PhaseOffset>
+<Layer><![CDATA[2.84499876586, 2.84453329688, 2.84445759641, 2.84442456002, 2.84442456002, 2.84445759641, 2.84453329688, 2.84499876586, 2.85749491995, 2.85738706528, 2.85694226532, 2.85609865231, 2.85609865231, 2.85694226532, 2.85738706528, 2.85749491995, 2.87001751405, 2.86955293523, 2.86668430276, 2.86150240497, 2.86150240497, 2.86668430276, 2.86955293523, 2.87001751405, 2.8816205845, 2.8803739839, 2.87318482464, 2.854830087, 2.854830087, 2.87318482464, 2.8803739839, 2.8816205845, 2.89171995033, 2.89051300457, 2.88335921602, 2.86501987815, 2.86501987815, 2.88335921602, 2.89051300457, 2.89171995033, 2.89979597137, 2.89943463552, 2.89665983971, 2.89153249177, 2.89153249177, 2.89665983971, 2.89943463552, 2.89979597137, 2.90543830017, 2.90546102511, 2.9051339647, 2.90436138496, 2.90436138496, 2.9051339647, 2.90546102511, 2.90543830017, 2.90871323306, 2.90837083275, 2.90840406976, 2.90843602854, 2.90843602854, 2.90840406976, 2.90837083275, 2.90871323306, ]]></Layer>
+<Layer><![CDATA[2.83506712105, 2.83496386514, 2.83452394626, 2.83368422182, 2.83368422182, 2.83452394626, 2.83496386514, 2.83506712105, 2.84779075597, 2.84650085759, 2.83928173038, 2.82093571721, 2.82093571721, 2.83928173038, 2.84650085759, 2.84779075597, 2.86027621791, 2.85221315707, 2.86251923685, 2.91136920943, 2.91136920943, 2.86251923685, 2.85221315707, 2.86027621791, 2.87185815852, 2.8462908874, 2.92388969736, 2.97163003775, 2.97163003775, 2.92388969736, 2.8462908874, 2.87185815852, 2.88317456495, 2.85764180667, 2.93534315131, 2.983149408, 2.983149408, 2.93534315131, 2.85764180667, 2.88317456495, 2.89364353607, 2.88569205099, 2.89615033655, 2.94517566445, 2.94517566445, 2.89615033655, 2.88569205099, 2.89364353607, 2.90151352296, 2.90037067151, 2.89327639175, 2.87496885118, 2.87496885118, 2.89327639175, 2.90037067151, 2.90151352296, 2.90646676104, 2.90650028957, 2.90618305502, 2.90541651008, 2.90541651008, 2.90618305502, 2.90650028957, 2.90646676104, ]]></Layer>
+<Layer><![CDATA[2.82592505827, 2.82546801245, 2.82261373463, 2.81745046992, 2.81745046992, 2.82261373463, 2.82546801245, 2.82592505827, 2.83780807941, 2.82975748467, 2.84005242579, 2.88884584266, 2.88884584266, 2.84005242579, 2.82975748467, 2.83780807941, 2.84783798916, 2.85294668619, 2.94943292301, 3.01218574095, 3.01218574095, 2.94943292301, 2.85294668619, 2.84783798916, 2.85551556985, 2.91469023969, 3.02518539992, 3.17394786436, 3.17394786436, 3.02518539992, 2.91469023969, 2.85551556985, 2.86772502141, 2.92699020342, 3.03761007099, 3.18651188035, 3.18651188035, 3.03761007099, 2.92699020342, 2.86772502141, 2.88385230298, 2.88909790779, 2.98589893674, 3.04886023656, 3.04886023656, 2.98589893674, 2.88909790779, 2.88385230298, 2.89581672991, 2.88788175343, 2.89835969533, 2.94740323688, 2.94740323688, 2.89835969533, 2.88788175343, 2.89581672991, 2.90305180839, 2.90271594622, 2.89996492324, 2.89485224198, 2.89485224198, 2.89996492324, 2.90271594622, 2.90305180839, ]]></Layer>
+<Layer><![CDATA[2.8174660739, 2.81622620254, 2.80906830653, 2.79079073019, 2.79079073019, 2.80906830653, 2.81622620254, 2.8174660739, 2.82774829599, 2.80224523968, 2.8796473542, 2.92729575108, 2.92729575108, 2.8796473542, 2.80224523968, 2.82774829599, 2.83307461442, 2.89216654534, 3.00256033929, 3.15129082911, 3.15129082911, 3.00256033929, 2.89216654534, 2.83307461442, 2.82766821089, 2.95282190048, 3.16429786265, 2.94209883812, 2.94209883812, 3.16429786265, 2.95282190048, 2.82766821089, 2.84041350126, 2.96568336757, 3.17728266529, 2.9549248066, 2.9549248066, 3.17728266529, 2.96568336757, 2.84041350126, 2.87071507724, 2.93000832923, 3.04066777155, 3.18961948069, 3.18961948069, 3.04066777155, 2.93000832923, 2.87071507724, 2.88843055647, 2.86292442366, 2.94068467179, 2.98853063761, 2.98853063761, 2.94068467179, 2.86292442366, 2.88843055647, 2.89820874615, 2.89703983833, 2.88992113145, 2.87159997051, 2.87159997051, 2.88992113145, 2.89703983833, 2.89820874615, ]]></Layer>
+<Layer><![CDATA[2.8098898859, 2.80867976869, 2.80155422316, 2.78330534473, 2.78330534473, 2.80155422316, 2.80867976869, 2.8098898859, 2.81908869436, 2.79363390243, 2.87103369291, 2.91869360403, 2.91869360403, 2.87103369291, 2.79363390243, 2.81908869436, 2.82373184987, 2.88281979157, 2.9932179992, 3.14201712777, 3.14201712777, 2.9932179992, 2.88281979157, 2.82373184987, 2.81807873195, 2.94317314383, 3.15463565258, 2.93245129064, 2.93245129064, 3.15463565258, 2.94317314383, 2.81807873195, 2.83102116617, 2.95620118465, 3.16769767042, 2.94547261418, 2.94547261418, 3.16769767042, 2.95620118465, 2.83102116617, 2.86197707153, 2.921195143, 3.03174941926, 3.18057359726, 3.18057359726, 3.03174941926, 2.921195143, 2.86197707153, 2.88079915163, 2.8552568241, 2.9329341939, 2.98072463421, 2.98072463421, 2.9329341939, 2.8552568241, 2.88079915163, 2.89207391126, 2.89086872253, 2.88371653525, 2.86537798025, 2.86537798025, 2.88371653525, 2.89086872253, 2.89207391126, ]]></Layer>
+<Layer><![CDATA[2.80337359771, 2.80299254949, 2.80021456348, 2.79510553543, 2.79510553543, 2.80021456348, 2.80299254949, 2.80337359771, 2.81203280013, 2.80407843605, 2.81444593236, 2.86323180995, 2.86323180995, 2.81444593236, 2.80407843605, 2.81203280013, 2.82003024165, 2.82519445812, 2.92162878651, 2.98440561354, 2.98440561354, 2.92162878651, 2.82519445812, 2.82003024165, 2.82696685929, 2.88605402466, 2.99644739576, 3.14521694025, 3.14521694025, 2.99644739576, 2.88605402466, 2.82696685929, 2.83978506993, 2.89889112197, 3.00929898715, 3.15801049972, 3.15801049972, 3.00929898715, 2.89889112197, 2.83978506993, 2.85789447753, 2.86301593711, 2.95955974301, 3.0223415049, 3.0223415049, 2.95955974301, 2.86301593711, 2.85789447753, 2.87315755079, 2.86511501634, 2.87545622936, 2.92435774482, 2.92435774482, 2.87545622936, 2.86511501634, 2.87315755079, 2.88483837317, 2.88440775344, 2.88156920239, 2.87640371967, 2.87640371967, 2.88156920239, 2.88440775344, 2.88483837317, ]]></Layer>
+<Layer><![CDATA[2.79808030821, 2.79807282886, 2.79772146749, 2.79693799519, 2.79693799519, 2.79772146749, 2.79807282886, 2.79808030821, 2.80552474618, 2.80433698387, 2.79723520665, 2.77900630377, 2.77900630377, 2.79723520665, 2.80433698387, 2.80552474618, 2.81469555863, 2.80672584712, 2.81708017668, 2.86586292807, 2.86586292807, 2.81708017668, 2.80672584712, 2.81469555863, 2.82509514761, 2.79960538529, 2.87700523091, 2.92465589152, 2.92465589152, 2.87700523091, 2.79960538529, 2.82509514761, 2.83746075137, 2.81191893928, 2.88933952921, 2.93698791659, 2.93698791659, 2.88933952921, 2.81191893928, 2.83746075137, 2.85122164195, 2.84315652171, 2.85345076343, 2.90227307394, 2.90227307394, 2.85345076343, 2.84315652171, 2.85122164195, 2.86450546733, 2.86322328397, 2.85600540669, 2.83764576758, 2.83764576758, 2.85600540669, 2.86322328397, 2.86450546733, 2.87672634421, 2.87663858951, 2.87621155969, 2.8753782165, 2.8753782165, 2.87621155969, 2.87663858951, 2.87672634421, ]]></Layer>
+<Layer><![CDATA[2.79449137777, 2.79411985695, 2.79412580744, 2.79414162103, 2.79414162103, 2.79412580744, 2.79411985695, 2.79449137777, 2.79979874988, 2.79978156962, 2.79942130273, 2.79863225504, 2.79863225504, 2.79942130273, 2.79978156962, 2.79979874988, 2.8078366383, 2.80743373779, 2.80463415823, 2.79951020636, 2.79951020636, 2.80463415823, 2.80743373779, 2.8078366383, 2.81788858082, 2.81664731946, 2.80948788481, 2.79120888708, 2.79120888708, 2.80948788481, 2.81664731946, 2.81788858082, 2.82949035087, 2.82821961476, 2.82102651838, 2.8027143251, 2.8027143251, 2.82102651838, 2.82821961476, 2.82949035087, 2.84210689039, 2.84162983341, 2.83875378113, 2.83357294274, 2.83357294274, 2.83875378113, 2.84162983341, 2.84210689039, 2.8551438656, 2.85503513782, 2.85458961194, 2.85374563962, 2.85374563962, 2.85458961194, 2.85503513782, 2.8551438656, 2.86830839842, 2.86784873959, 2.86777848296, 2.86774866658, 2.86774866658, 2.86777848296, 2.86784873959, 2.86830839842, ]]></Layer>
+</PhaseOffset>
+</Structure>
+        </VXC>
+        </VXA>

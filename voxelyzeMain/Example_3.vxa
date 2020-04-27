@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<VXA Version="1.0">
+<Simulator>
+<Integration>
+<Integrator>0</Integrator>
+<DtFrac>0.9</DtFrac>
+</Integration>
+<Damping>
+<BondDampingZ>1</BondDampingZ>
+<ColDampingZ>0.8</ColDampingZ>
+<SlowDampingZ>0.01</SlowDampingZ>
+</Damping>
+<Collisions>
+<SelfColEnabled>1</SelfColEnabled>
+<ColSystem>3</ColSystem>
+<CollisionHorizon>2</CollisionHorizon>
+</Collisions>
+<Features>
+<FluidDampEnabled>0</FluidDampEnabled>
+<PoissonKickBackEnabled>0</PoissonKickBackEnabled>
+<EnforceLatticeEnabled>0</EnforceLatticeEnabled>
+</Features>
+<SurfMesh>
+<CMesh>
+<DrawSmooth>1</DrawSmooth>
+<Vertices/>
+<Facets/>
+<Lines/>
+</CMesh>
+</SurfMesh>
+<StopCondition>
+<!-- StopCondition 2 is Simulation Time (in seconds) -->
+<StopConditionType>2</StopConditionType>
+<StopConditionValue>10</StopConditionValue>
+<InitCmTime>3.0</InitCmTime>
+</StopCondition>
+<GA>
+<FitnessFileName>Change_Me_output.xml</FitnessFileName>
+<WriteFitnessFile>true</WriteFitnessFile>
+</GA>
+</Simulator>
+<Environment>
+<Fixed_Regions>
+<NumFixed>0</NumFixed>
+</Fixed_Regions>
+<Forced_Regions>
+<NumForced>0</NumForced>
+</Forced_Regions>
+<Gravity>
+<GravEnabled>1</GravEnabled>
+<GravAcc>-9.81</GravAcc>
+<FloorEnabled>1</FloorEnabled>
+<PipeEnabled>1</PipeEnabled>
+<bump_size>0.0001</bump_size>
+<pipe>0.0425</pipe>
+<bump_seperation>20</bump_seperation>
+</Gravity>
+<Thermal>
+<TempEnabled>1</TempEnabled>
+<TempAmp>39</TempAmp>
+<TempBase>25</TempBase>
+<VaryTempEnabled>1</VaryTempEnabled>
+<TempPeriod>0.25</TempPeriod>
+</Thermal>
+</Environment>
+    <VXC Version="0.93">
+    <Lattice>
+    <Lattice_Dim>0.05</Lattice_Dim>
+    <X_Dim_Adj>1</X_Dim_Adj>
+    <Y_Dim_Adj>1</Y_Dim_Adj>
+    <Z_Dim_Adj>1</Z_Dim_Adj>
+    <X_Line_Offset>0</X_Line_Offset>
+    <Y_Line_Offset>0</Y_Line_Offset>
+    <X_Layer_Offset>0</X_Layer_Offset>
+    <Y_Layer_Offset>0</Y_Layer_Offset>
+    </Lattice>
+    <Voxel>
+    <Vox_Name>BOX</Vox_Name>
+    <X_Squeeze>1</X_Squeeze>
+    <Y_Squeeze>1</Y_Squeeze>
+    <Z_Squeeze>1</Z_Squeeze>
+    </Voxel>
+    <Palette>
+    <Material ID="1">
+    <MatType>0</MatType>
+    <Name>Passive_Soft</Name>
+    <Display>
+    <Red>0</Red>
+    <Green>1</Green>
+    <Blue>1</Blue>
+    <Alpha>1</Alpha>
+    </Display>
+    <Mechanical>
+    <MatModel>0</MatModel>
+    <Elastic_Mod>1000</Elastic_Mod>
+    <Plastic_Mod>0</Plastic_Mod>
+    <Yield_Stress>0</Yield_Stress>
+    <FailModel>0</FailModel>
+    <Fail_Stress>0</Fail_Stress>
+    <Fail_Strain>0</Fail_Strain>
+    <Density>12000.0</Density>
+    <Poissons_Ratio>0.4</Poissons_Ratio>
+    <CTE>0</CTE>
+    <uStatic>1</uStatic>
+    <uDynamic>0.5</uDynamic>
+    </Mechanical>
+    </Material>
+    <Material ID="2">
+    <MatType>0</MatType>
+    <Name>Passive_Hard</Name>
+    <Display>
+    <Red>0</Red>
+    <Green>0</Green>
+    <Blue>1</Blue>
+    <Alpha>1</Alpha>
+    </Display>
+    <Mechanical>
+    <MatModel>0</MatModel>
+    <Elastic_Mod>10000000</Elastic_Mod>
+    <Plastic_Mod>0</Plastic_Mod>
+    <Yield_Stress>0</Yield_Stress>
+    <FailModel>0</FailModel>
+    <Fail_Stress>0</Fail_Stress>
+    <Fail_Strain>0</Fail_Strain>
+    <Density>2200.0</Density>
+    <Poissons_Ratio>0.4</Poissons_Ratio>
+    <CTE>0</CTE>
+    <uStatic>1</uStatic>
+    <uDynamic>0.5</uDynamic>
+    </Mechanical>
+    </Material>
+    <Material ID="3">
+    <MatType>0</MatType>
+    <Name>Active_+</Name>
+    <Display>
+    <Red>1</Red>
+    <Green>0</Green>
+    <Blue>0</Blue>
+    <Alpha>1</Alpha>
+    </Display>
+    <Mechanical>
+    <MatModel>0</MatModel>
+    <Elastic_Mod>1.0e+006</Elastic_Mod>
+    <Plastic_Mod>0</Plastic_Mod>
+    <Yield_Stress>0</Yield_Stress>
+    <FailModel>0</FailModel>
+    <Fail_Stress>10</Fail_Stress>
+    <Fail_Strain>0</Fail_Strain>
+    <Density>12000.0</Density>
+    <Poissons_Ratio>0.4</Poissons_Ratio>
+    <CTE>0</CTE>
+    <uStatic>1</uStatic>
+    <uDynamic>0.5</uDynamic>
+    </Mechanical>
+    </Material>
+    <Material ID="4">
+    <MatType>0</MatType>
+    <Name>Active_-</Name>
+    <Display>
+    <Red>0</Red>
+    <Green>1</Green>
+    <Blue>0</Blue>
+    <Alpha>1</Alpha>
+    </Display>
+    <Mechanical>
+    <MatModel>0</MatModel>
+    <Elastic_Mod>1.0e+006</Elastic_Mod>
+    <Plastic_Mod>0</Plastic_Mod>
+    <Yield_Stress>0</Yield_Stress>
+    <FailModel>0</FailModel>
+    <Fail_Stress>0</Fail_Stress>
+    <Fail_Strain>0</Fail_Strain>
+    <Density>12000.0</Density>
+    <Poissons_Ratio>0.4</Poissons_Ratio>
+    <CTE>0.02</CTE>
+    <uStatic>1</uStatic>
+    <uDynamic>0.5</uDynamic>
+    </Mechanical>
+    </Material>
+    <Material ID="5">
+    <MatType>0</MatType>
+    <Name>Aperture</Name>
+    <Display>
+    <Red>1</Red>
+    <Green>0.784</Green>
+    <Blue>0</Blue>
+    <Alpha>1</Alpha>
+    </Display>
+    <Mechanical>
+    <MatModel>0</MatModel>
+    <Elastic_Mod>5e+007</Elastic_Mod>
+    <Plastic_Mod>0</Plastic_Mod>
+    <Yield_Stress>0</Yield_Stress>
+    <FailModel>0</FailModel>
+    <Fail_Stress>0</Fail_Stress>
+    <Fail_Strain>0</Fail_Strain>
+    <Density>12000.0</Density>
+    <Poissons_Ratio>0.4</Poissons_Ratio>
+    <CTE>-0.04</CTE>
+    <uStatic>1</uStatic>
+    <uDynamic>0.5</uDynamic>
+    </Mechanical>
+    </Material>
+    </Palette>
+    <Structure Compression="ASCII_READABLE">
+    <X_Voxels>6</X_Voxels>
+    <Y_Voxels>6</Y_Voxels>
+    <Z_Voxels>6</Z_Voxels>
+    <Data>
+    <Layer><![CDATA[333333333333333333333333333333333333]]></Layer>
+    <Layer><![CDATA[334433334433334433334433334433334433]]></Layer>
+    <Layer><![CDATA[334433334433334433334433334433334433]]></Layer>
+    <Layer><![CDATA[334433334433334433334433334433334433]]></Layer>
+    <Layer><![CDATA[334433334433334433334433334433334433]]></Layer>
+    <Layer><![CDATA[333333333333333333333333333333333333]]></Layer>
+    </Data>
+    <PhaseOffset>
+    <Layer><![CDATA[0,0,0,0,0,0,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.2,-0.2,-0.2,-0.2,-0.2,-0.2,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,-0.4,-0.4,-0.4,-0.4,-0.4,-0.4,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5]]></Layer>
+    <Layer><![CDATA[0,0,0,0,0,0,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.2,-0.2,-0.2,-0.2,-0.2,-0.2,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,-0.4,-0.4,-0.4,-0.4,-0.4,-0.4,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5]]></Layer>
+    <Layer><![CDATA[0,0,0,0,0,0,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.2,-0.2,-0.2,-0.2,-0.2,-0.2,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,-0.4,-0.4,-0.4,-0.4,-0.4,-0.4,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5]]></Layer>
+    <Layer><![CDATA[0,0,0,0,0,0,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.2,-0.2,-0.2,-0.2,-0.2,-0.2,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,-0.4,-0.4,-0.4,-0.4,-0.4,-0.4,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5]]></Layer>
+    <Layer><![CDATA[0,0,0,0,0,0,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.2,-0.2,-0.2,-0.2,-0.2,-0.2,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,-0.4,-0.4,-0.4,-0.4,-0.4,-0.4,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5]]></Layer>
+    <Layer><![CDATA[0,0,0,0,0,0,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.2,-0.2,-0.2,-0.2,-0.2,-0.2,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,-0.4,-0.4,-0.4,-0.4,-0.4,-0.4,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5]]></Layer>
+    </PhaseOffset>
+    <Stiffness>
+    <MinElasticMod>2000000.0</MinElasticMod>
+    <MaxElasticMod>6000000.0</MaxElasticMod>
+    <Layer><![CDATA[3000017.312835852, 6098913.949136395, 6951500.753777946, 6948213.193112288, 6005021.126885625, 5721922.393134737, 3171105.105034312, 3135105.5716802482, 3945252.214507363, 3886860.328358575, 3118381.312809558, 3158738.143930038, 3015972.286817946, 3008145.6974954195, 3041644.3574222187, 3041464.3186524296, 3008548.917174342, 3016255.7425311795, 3007686.5864066132, 3002374.5795862647, 3004328.3202400766, 3004529.500328513, 3002511.798745488, 3007229.1750313058, 3014817.120316443, 3002342.2535196734, 3001475.828224977, 3001532.2450333093, 3002323.067190978, 3012035.8282148526, 3171298.380626063, 3014335.3600433944, 3006293.614263286, 3006377.7777626165, 3013476.7854455863, 3012035.8282148526]]></Layer>
+    <Layer><![CDATA[5378802.897438843, 6068992.748993524, 5000000, 5000000, 6003396.039881638, 5028557.010856486, 3077020.4013940403, 3100816.2055246425, 5000000, 5000000, 3073698.408038911, 3060673.3114204383, 3010472.575689071, 3010848.147335889, 5000000, 5000000, 3010257.423822362, 3009347.069866839, 3006686.0363315856, 3005352.499819371, 5000000, 5000000, 3005679.0383558306, 3005976.22259517, 3014517.669685066, 3008369.7376539265, 5000000, 5000000, 3008823.9772154274, 3012020.732194528, 3242965.360514435, 3194475.9599106223, 5000000, 5000000, 3195602.475002525, 3182067.0842081034]]></Layer>
+    <Layer><![CDATA[5451523.774623399, 6028630.594562568, 5000000, 5000000, 5917732.054918741, 5141985.3189719925, 3080425.536730106, 3083474.641864072, 5000000, 5000000, 3061024.8764531408, 3064260.82475409, 3018400.266528045, 3018619.971575413, 5000000, 5000000, 3016513.8612712636, 3015766.6149641476, 3020406.16521671, 3020984.0625403617, 5000000, 5000000, 3021244.729731188, 3017314.165432466, 3086244.5929954066, 3085816.7913317727, 5000000, 5000000, 3091563.766796657, 3067323.7214837824, 4920218.57639883, 5798248.8777487045, 5000000, 5000000, 5652254.803955334, 4716229.030652445]]></Layer>
+    <Layer><![CDATA[6265271.946893362, 6176380.586805563, 5000000, 5000000, 5988821.944261015, 5969509.389254565, 3243525.840822766, 3152040.8990008878, 5000000, 5000000, 3125755.6093791244, 3209398.9634346166, 3089088.066270672, 3078109.5434534666, 5000000, 5000000, 3067176.8510348913, 3075490.9787394, 3179156.7074288116, 3182469.4730716525, 5000000, 5000000, 3170633.5762958205, 3143169.3639879595, 4085287.0090033007, 4152002.511131697, 5000000, 5000000, 4095060.27684841, 3936786.8279110068, 6917922.40785593, 6968755.416168073, 5000000, 5000000, 6963029.005197817, 6900965.595939785]]></Layer>
+    <Layer><![CDATA[6927641.761562325, 6732519.772491039, 5000000, 5000000, 6495837.019322895, 6801316.105825454, 4830872.129145945, 3942177.2502897847, 5000000, 5000000, 3896459.7253122134, 4698289.127764454, 4115139.838504, 3929526.43446699, 5000000, 5000000, 3868558.118174043, 4016123.676909565, 4973031.514058875, 5081364.158095299, 5000000, 5000000, 4998880.319353635, 4847703.412893932, 6742063.855585315, 6735755.723992157, 5000000, 5000000, 6703633.363277407, 6652796.1024267115, 6999389.52438288, 6999751.843401046, 5000000, 5000000, 6999689.041447837, 6999124.431312917]]></Layer>
+    <Layer><![CDATA[6999234.199259332, 6993397.596637516, 6997413.7751050405, 6994678.419866562, 6974983.487952048, 6996228.272290676, 6931460.477398571, 6585652.892072813, 6798087.431108597, 6739175.660200461, 6370593.502884516, 6806231.958541943, 6822063.8059151, 6556428.356095298, 6950202.4614602495, 6938945.951238145, 6404500.098648887, 6640442.529009158, 6952774.521011196, 6918274.329960696, 6997355.176665933, 6996918.525177058, 6879996.324448493, 6897048.955396542, 6998621.610342912, 6997852.502414216, 6999961.765264794, 6999958.276756093, 6996984.090197807, 6997092.160541377, 6999998.205054252, 6999999.173276377, 6999999.998924763, 6999999.998797341, 6999998.8039702615, 7000000.0]]></Layer>
+    </Stiffness>
+</Structure>
+</VXC>
+</VXA>
